@@ -1,5 +1,19 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; }
-header { background: #333; color: #fff; padding: 20px; text-align: center; }
+body { font-family: system-ui, Arial, sans-serif; line-height: 1.6; background:#0f1220; color:#e8e8f0; }
+header { background: #121527; color: #fff; padding: 20px; text-align: center; border-bottom:1px solid #23284a; }
+header nav { margin-top:10px; }
+header nav a { color:#a8b0ff; margin:0 8px; text-decoration:none; padding:6px 10px; border-radius:6px; }
+header nav a.active, header nav a:hover { background:#1a1f3f; color:#fff; }
 main { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
-footer { background: #333; color: #fff; text-align: center; padding: 10px; margin-top: 40px; }
+.stat-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+.card { background:#141833; border:1px solid #23284a; border-radius:12px; padding:16px; }
+.card .label { color:#9aa3d4; font-size:14px; }
+.card .value { font-size:28px; margin-top:8px; color:#ffffff; }
+.controls { display:flex; gap:12px; margin:16px 0; }
+.controls input, .controls select { padding:10px; border-radius:8px; border:1px solid #23284a; background:#0e1228; color:#e8e8f0; }
+.file-list { list-style:none; display:grid; grid-template-columns: repeat(1,1fr); gap:6px; }
+.file-list li { background:#131735; border:1px solid #23284a; padding:10px; border-radius:8px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.pager { display:flex; gap:8px; margin:16px 0; }
+.pager button { padding:8px 12px; border-radius:8px; border:1px solid #23284a; background:#0e1228; color:#e8e8f0; }
+.summary { color:#9aa3d4; margin-bottom:8px; }
+footer { background: #121527; color: #fff; text-align: center; padding: 10px; margin-top: 40px; border-top:1px solid #23284a; }
