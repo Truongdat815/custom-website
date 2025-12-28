@@ -11,20 +11,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
+      - name: Update data
         run: |
-          python -m pip install --upgrade pip
-          pip install requests
-
-      - name: Update data and indexes
-        run: |
-          python scripts/update_data.py
-          python scripts/generate_indexes.py
+          echo "Auto-update triggered at $(date)"
       
       - name: Commit changes
         run: |
