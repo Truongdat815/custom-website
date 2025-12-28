@@ -1,0 +1,15 @@
+{
+  "updated_at": "1970-01-01T00:00:00Z",
+  "gold": {
+    "series": [
+      {"t": "1970-01-01T00:00:00Z", "usd": 0}
+    ]
+  },
+  "weather": {
+    "cities": [
+      {"name": "Ho Chi Minh City", "hours": [
+        {"t": "1970-01-01T00:00:00Z", "temp": 0}
+      ]}
+    ]
+  }
+}
